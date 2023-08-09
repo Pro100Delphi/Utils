@@ -1,5 +1,6 @@
 # Utils
 
+'''pascal
 procedure PrintBits(AVal: Cardinal);
 var i: Integer;
 begin
@@ -13,3 +14,4 @@ begin
 
   Writeln('');
 end;
+'''
