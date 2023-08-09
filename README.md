@@ -128,12 +128,12 @@ end;
 ```
 </details>
 
+Bind Logger in main program
+
 <details>
 <summary> Colored Logger Control </summary>
 
 ``` delphi
-
-Bind Logger in main program
 uses
   ..., MyLogger, ...;
 	
@@ -149,6 +149,7 @@ begin
 end;
 ``` 
 
+Logger Unit
 ```delphi
 unit MyLogger;
 
