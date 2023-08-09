@@ -2,6 +2,7 @@
 
 <details>
 <summary> Bits </summary>
+
 ```pascal
 procedure PrintBits(AVal: Cardinal);
 var i: Integer;
