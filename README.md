@@ -131,6 +131,7 @@ end;
 <details>
 <summary> Colored Logger Control </summary>
 
+
 Bind Logger in main program
 ``` delphi
 uses
@@ -149,6 +150,7 @@ end;
 ``` 
 
 Logger Unit
+
 ```delphi
 unit MyLogger;
 
