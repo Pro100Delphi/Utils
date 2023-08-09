@@ -137,15 +137,13 @@ Bind Logger in main program
 uses
   ..., MyLogger, ...;
 	
-  ...	
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
 
   MyLogControl.Parent := Self;
   MyLogControl.Align := alRight;
   MyLogControl.Width := 250;
-
-  ...
+  
 end;
 ``` 
 
