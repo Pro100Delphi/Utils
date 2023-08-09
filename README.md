@@ -133,6 +133,7 @@ end;
 
 ``` delphi
 
+´´´
 Bind Logger in main program
 uses
 	..., MyLogger, ...;
@@ -148,9 +149,8 @@ begin
 
   ...
 end;
-
+´´´
   
-
 unit MyLogger;
 
 interface
