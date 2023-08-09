@@ -155,12 +155,10 @@ unit MyLogger;
 interface
 
 uses
-  SysUtils, Classes, Controls, StdCtrls, Graphics, ComCtrls, Forms, Windows, Messages,
-
-  MyCore, MyControl, MyButton;
+  SysUtils, Classes, Controls, StdCtrls, Graphics, ComCtrls, Forms, Windows, Messages;
 
 type
-  TMyLogger = class(TMyControl)
+  TMyLogger = class(TCustomControl)
     private
       FLog: TRichEdit;
       FButton: TButton;
