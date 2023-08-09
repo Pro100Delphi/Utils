@@ -28,9 +28,7 @@ begin
 
   Result := ShFileOperation(FOS) = 0;
 end;
-```
 
-```delphi
 function RenameFile(AOldFileName, ANewFileName: String): Boolean;
 var FOS : TSHFileOpStruct;
 begin
@@ -43,5 +41,51 @@ begin
   FOS.fFlags  := FOF_SILENT or FOF_SIMPLEPROGRESS or FOF_NOCONFIRMATION;
 
   Result := ShFileOperation(FOS) = 0;
+end;
+```
+
+
+``` delphi
+function RandomStr(ALow, AHigh, ADigs: Integer; AOther: String = ''): String;
+const
+  L = 'abcdefghijklmnopqrstuvwxyz';
+  H = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  D = '0123456789';
+var
+  i: Integer;
+  R: Integer;
+
+  C: Char;
+  a, b: Integer;
+begin
+  Result := '';
+
+  for i := 1 to ALow do
+    begin
+      R := Random(Length(L)) + 1;
+      Result := Result + L[R]
+    end;
+
+  for i := 1 to AHigh do
+    begin
+      R := Random(Length(H)) + 1;
+      Result := Result + H[R]
+    end;
+
+  for i := 1 to ADigs do
+    begin
+      R := Random(Length(D)) + 1;
+      Result := Result + D[R]
+    end;
+
+  for i := 1 to Length(Result) do
+    begin
+      a := Random(Length(Result)) + 1;
+      b := Random(Length(Result)) + 1;
+
+      C := Result[a];
+      Result[a] := Result[b];
+      Result[b] := C;
+    end;
 end;
 ```
