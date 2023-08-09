@@ -53,6 +53,9 @@ end;
 ```
 </details>
 
+<details>
+<summary> Random String - First Idea </summary>
+
 ``` delphi
 function RandomStr(ALow, AHigh, ADigs: Integer; AOther: String = ''): String;
 const
@@ -97,3 +100,5 @@ begin
     end;
 end;
 ```
+
+</details>
