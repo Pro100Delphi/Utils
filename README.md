@@ -20,6 +20,10 @@ end;
 ```
 </details>
 
+
+<details>
+<summary> File </summary>
+
 ```delphi
 function DeleteFile(AFileName: String): Boolean;
 var FOS : TSHFileOpStruct;
@@ -47,7 +51,7 @@ begin
   Result := ShFileOperation(FOS) = 0;
 end;
 ```
-
+</details>
 
 ``` delphi
 function RandomStr(ALow, AHigh, ADigs: Integer; AOther: String = ''): String;
