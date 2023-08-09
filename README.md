@@ -22,7 +22,7 @@ end;
 
 
 <details>
-<summary> File </summary>
+<summary> File operation - ShellAPi </summary>
 
 ```delphi
 function DeleteFile(AFileName: String): Boolean;
