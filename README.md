@@ -1,5 +1,7 @@
 # Utils
 
+<details>
+ <summary> Bits </summary>
 ```pascal
 procedure PrintBits(AVal: Cardinal);
 var i: Integer;
@@ -15,6 +17,7 @@ begin
   Writeln('');
 end;
 ```
+</details>
 
 ```delphi
 function DeleteFile(AFileName: String): Boolean;
