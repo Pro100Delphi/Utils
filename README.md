@@ -54,6 +54,32 @@ end;
 </details>
 
 <details>
+<summary> String to char array buffer </summary>
+
+``` delphi
+procedure StrToCharBuffer(AStr: String; var ABuffer: Array of Char);
+var BLen: Integer;
+    SLen: Integer;
+begin
+
+  BLen := Length(ABuffer);
+  SLen := Length(AStr);
+
+  AStr := AStr + #0;
+
+  if SLen >= BLen then
+    begin
+      SLen := BLen;
+      AStr[SLen] := #0;
+    end;
+
+  ZeroMemory(@ABuffer[0], BLen * SizeOf(Char));
+  CopyMemory(@ABuffer[0], @AStr[1], SLen * SizeOf(Char));
+end;
+```
+</details>
+
+<details>
 <summary> Random String - First Idea </summary>
 
 ``` delphi
