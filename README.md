@@ -128,11 +128,10 @@ end;
 ```
 </details>
 
-Bind Logger in main program
-
 <details>
 <summary> Colored Logger Control </summary>
 
+Bind Logger in main program
 ``` delphi
 uses
   ..., MyLogger, ...;
