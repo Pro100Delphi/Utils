@@ -45,6 +45,19 @@ asm
   BSWAP   EDX
 end;
 ```
+
+``` delphi
+var DVal: Double;
+    IVal: ^Int64;
+    SVal: Int64;
+begin
+
+  DVal := 3.14159265;
+  IVal := @DVal;
+
+  SVal := Swap64(IVal^);
+```
+
 </details>
 
 
