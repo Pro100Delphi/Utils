@@ -20,6 +20,33 @@ end;
 ```
 </details>
 
+<details>
+<summary> Little Endian - Big Endian </summary>
+
+``` delphi
+// byte swaps 16 bit values
+function Swap16(V: WORD): WORD; { inline; }
+asm
+  XCHG    AL,AH
+end;
+
+// byte swaps 32 bit values
+function Swap32(V: DWORD): DWORD; { inline; }
+asm
+  BSWAP   EAX
+end;
+
+// byte swaps 64 bit values
+function Swap64(V: Int64): Int64; { inline; }
+asm
+  MOV     EDX,[EAX]
+  MOV     EAX,[EAX+4]
+  BSWAP   EAX
+  BSWAP   EDX
+end;
+```
+</details>
+
 
 <details>
 <summary> File operation - ShellAPI </summary>
